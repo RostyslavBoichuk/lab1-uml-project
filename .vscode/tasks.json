@@ -1,0 +1,78 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Main Program (Static)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "fixed_matrix.cpp",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "-o",
+                "fixed_matrix.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build Old Matrix Tests (Static)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "tests/test_old_matrix.cpp",
+                "src/matrix_c_testable.c",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "-o",
+                "tests/test_old_matrix.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build New Matrix Tests (Static)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Itests/catch",
+                "tests/test_new_matrix.cpp",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "-o",
+                "tests/test_new_matrix.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build Everything (Static)",
+            "dependsOn": [
+                "Build Main Program (Static)",
+                "Build Old Matrix Tests (Static)",
+                "Build New Matrix Tests (Static)"
+            ],
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

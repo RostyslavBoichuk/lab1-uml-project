@@ -1,0 +1,64 @@
+\doxysection{IMatrix\+Multiplier\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_i_matrix_multiplier}{}\label{class_i_matrix_multiplier}\index{IMatrixMultiplier$<$ T $>$@{IMatrixMultiplier$<$ T $>$}}
+
+
+Strategy interface for multiplication algorithms.  
+
+
+Inheritance diagram for IMatrix\+Multiplier\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_matrix_multiplier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{class_i_matrix_multiplier_a7eecade1143772ed1f81af79465c606a}{multiply}} (const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B) const =0
+\item 
+virtual \mbox{\hyperlink{class_i_matrix_multiplier_a6dcb3fd729c18126fc17761d9d8fb403}{\texorpdfstring{$\sim$}{\string~}\+IMatrix\+Multiplier}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class IMatrix\+Multiplier$<$ T $>$}
+Strategy interface for multiplication algorithms. 
+
+Allows runtime switching between\+:
+\begin{DoxyItemize}
+\item Classical algorithm
+\item Strassen algorithm 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_i_matrix_multiplier_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_matrix_multiplier_a6dcb3fd729c18126fc17761d9d8fb403}\index{IMatrixMultiplier$<$ T $>$@{IMatrixMultiplier$<$ T $>$}!````~IMatrixMultiplier@{\texorpdfstring{$\sim$}{\string~}IMatrixMultiplier}}
+\index{````~IMatrixMultiplier@{\texorpdfstring{$\sim$}{\string~}IMatrixMultiplier}!IMatrixMultiplier$<$ T $>$@{IMatrixMultiplier$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IMatrixMultiplier()}{\string~IMatrixMultiplier()}}
+{\footnotesize\ttfamily \label{class_i_matrix_multiplier_a6dcb3fd729c18126fc17761d9d8fb403} 
+template$<$typename T$>$ \\
+virtual \mbox{\hyperlink{class_i_matrix_multiplier}{IMatrix\+Multiplier}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_i_matrix_multiplier}{IMatrix\+Multiplier}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_i_matrix_multiplier_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_matrix_multiplier_a7eecade1143772ed1f81af79465c606a}\index{IMatrixMultiplier$<$ T $>$@{IMatrixMultiplier$<$ T $>$}!multiply@{multiply}}
+\index{multiply@{multiply}!IMatrixMultiplier$<$ T $>$@{IMatrixMultiplier$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily \label{class_i_matrix_multiplier_a7eecade1143772ed1f81af79465c606a} 
+template$<$typename T$>$ \\
+virtual \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{class_i_matrix_multiplier}{IMatrix\+Multiplier}}$<$ T $>$\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A}{, }\item[{const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_classical_multiplier_af9b93f5fb3b134225588cd11f171a595}{Classical\+Multiplier$<$ T $>$}}, and \mbox{\hyperlink{class_strassen_multiplier_ac1296cea2f543def282cfe68e5578bf9}{Strassen\+Multiplier$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fixed__matrix_8cpp}{fixed\+\_\+matrix.\+cpp}}\end{DoxyCompactItemize}

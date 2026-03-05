@@ -1,0 +1,156 @@
+\doxysection{src/matrix\+\_\+c\+\_\+testable.c File Reference}
+\hypertarget{matrix__c__testable_8c}{}\label{matrix__c__testable_8c}\index{src/matrix\_c\_testable.c@{src/matrix\_c\_testable.c}}
+
+
+Testable implementation of matrix operations.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}matrix\+\_\+c\+\_\+testable.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_a10fac9a8d872d26a13cd60121386fc57}{Scan\+Matrix}} (int array\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rows, int columns)
+\begin{DoxyCompactList}\small\item\em Reads matrix elements from standard input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_a109c80e92866192e2641b0e1f9f253e8}{Display\+Matrix}} (int array\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rows, int columns)
+\begin{DoxyCompactList}\small\item\em Prints matrix to console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_ad4a80af662b8faf42c8eefae720bd86a}{Add\+Matrix}} (int arrayone\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int arraytwo\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rows, int columns, int result\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Adds two matrices and stores result in output matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_a7469767ee3b301e19e9838d5e26e9423}{Sub\+Matrix}} (int arrayone\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int arraytwo\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rows, int columns, int result\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Subtracts two matrices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_aee99c7b7afa30511a49a1660f0bb09f9}{Scalar\+Product}} (int array\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int scalar, int rows, int columns, int result\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Multiplies matrix by scalar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_a3d0cd4a500e2b70bd816dee29ef237de}{Product\+Matrix}} (int arrayone\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int arraytwo\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rowsA, int columnsA, int columnsB, int result\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Multiplies two matrices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix__c__testable_8c_ab8c00ef4b6e8d2caa25676998ad421aa}{Transpose\+Matrix}} (int arrayone\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}, int rows, int columns, int result\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{matrix__c__testable_8h_a0592dba56693fad79136250c11e5a7fe}{MAX\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes transpose of a matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{matrix__c__testable_8c_acb559820d9ca11295b4500f179ef6392}{i}}
+\begin{DoxyCompactList}\small\item\em Global loop variables (legacy design). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{matrix__c__testable_8c_a37d972ae0b47b9099e30983131d31916}{j}}
+\item 
+int \mbox{\hyperlink{matrix__c__testable_8c_ab66ed8e0098c0a86b458672a55a9cca9}{k}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Testable implementation of matrix operations. 
+
+This file contains matrix functions refactored to support unit testing by returning results via output parameters.
+
+\begin{DoxyWarning}{Warning}
+Uses fixed-\/size arrays (MAX\+\_\+\+SIZE = 10). 
+\end{DoxyWarning}
+
+
+\label{doc-func-members}
+\Hypertarget{matrix__c__testable_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix__c__testable_8c_ad4a80af662b8faf42c8eefae720bd86a}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!AddMatrix@{AddMatrix}}
+\index{AddMatrix@{AddMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{AddMatrix()}{AddMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_ad4a80af662b8faf42c8eefae720bd86a} 
+void Add\+Matrix (\begin{DoxyParamCaption}\item[{int}]{arrayone}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{arraytwo}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rows}{, }\item[{int}]{columns}{, }\item[{int}]{result}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Adds two matrices and stores result in output matrix. 
+
+\Hypertarget{matrix__c__testable_8c_a109c80e92866192e2641b0e1f9f253e8}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!DisplayMatrix@{DisplayMatrix}}
+\index{DisplayMatrix@{DisplayMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{DisplayMatrix()}{DisplayMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_a109c80e92866192e2641b0e1f9f253e8} 
+void Display\+Matrix (\begin{DoxyParamCaption}\item[{int}]{array}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rows}{, }\item[{int}]{columns}{}\end{DoxyParamCaption})}
+
+
+
+Prints matrix to console. 
+
+\Hypertarget{matrix__c__testable_8c_a3d0cd4a500e2b70bd816dee29ef237de}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!ProductMatrix@{ProductMatrix}}
+\index{ProductMatrix@{ProductMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{ProductMatrix()}{ProductMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_a3d0cd4a500e2b70bd816dee29ef237de} 
+void Product\+Matrix (\begin{DoxyParamCaption}\item[{int}]{arrayone}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{arraytwo}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rowsA}{, }\item[{int}]{columnsA}{, }\item[{int}]{columnsB}{, }\item[{int}]{result}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Multiplies two matrices. 
+
+\Hypertarget{matrix__c__testable_8c_aee99c7b7afa30511a49a1660f0bb09f9}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!ScalarProduct@{ScalarProduct}}
+\index{ScalarProduct@{ScalarProduct}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{ScalarProduct()}{ScalarProduct()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_aee99c7b7afa30511a49a1660f0bb09f9} 
+void Scalar\+Product (\begin{DoxyParamCaption}\item[{int}]{array}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{scalar}{, }\item[{int}]{rows}{, }\item[{int}]{columns}{, }\item[{int}]{result}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Multiplies matrix by scalar. 
+
+\Hypertarget{matrix__c__testable_8c_a10fac9a8d872d26a13cd60121386fc57}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!ScanMatrix@{ScanMatrix}}
+\index{ScanMatrix@{ScanMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{ScanMatrix()}{ScanMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_a10fac9a8d872d26a13cd60121386fc57} 
+void Scan\+Matrix (\begin{DoxyParamCaption}\item[{int}]{array}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rows}{, }\item[{int}]{columns}{}\end{DoxyParamCaption})}
+
+
+
+Reads matrix elements from standard input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \doxylink{class_matrix}{Matrix} to fill. \\
+\hline
+{\em rows} & Number of rows. \\
+\hline
+{\em columns} & Number of columns. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{matrix__c__testable_8c_a7469767ee3b301e19e9838d5e26e9423}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!SubMatrix@{SubMatrix}}
+\index{SubMatrix@{SubMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{SubMatrix()}{SubMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_a7469767ee3b301e19e9838d5e26e9423} 
+void Sub\+Matrix (\begin{DoxyParamCaption}\item[{int}]{arrayone}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{arraytwo}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rows}{, }\item[{int}]{columns}{, }\item[{int}]{result}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Subtracts two matrices. 
+
+\Hypertarget{matrix__c__testable_8c_ab8c00ef4b6e8d2caa25676998ad421aa}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!TransposeMatrix@{TransposeMatrix}}
+\index{TransposeMatrix@{TransposeMatrix}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{TransposeMatrix()}{TransposeMatrix()}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_ab8c00ef4b6e8d2caa25676998ad421aa} 
+void Transpose\+Matrix (\begin{DoxyParamCaption}\item[{int}]{arrayone}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}, }\item[{int}]{rows}{, }\item[{int}]{columns}{, }\item[{int}]{result}{\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}\mbox{[}\+MAX\+\_\+\+SIZE\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Computes transpose of a matrix. 
+
+
+
+\label{doc-var-members}
+\Hypertarget{matrix__c__testable_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{matrix__c__testable_8c_acb559820d9ca11295b4500f179ef6392}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!i@{i}}
+\index{i@{i}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_acb559820d9ca11295b4500f179ef6392} 
+int i}
+
+
+
+Global loop variables (legacy design). 
+
+These variables are used for iteration. Using global variables for loops is considered bad practice. \Hypertarget{matrix__c__testable_8c_a37d972ae0b47b9099e30983131d31916}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!j@{j}}
+\index{j@{j}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_a37d972ae0b47b9099e30983131d31916} 
+int j}
+
+\Hypertarget{matrix__c__testable_8c_ab66ed8e0098c0a86b458672a55a9cca9}\index{matrix\_c\_testable.c@{matrix\_c\_testable.c}!k@{k}}
+\index{k@{k}!matrix\_c\_testable.c@{matrix\_c\_testable.c}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily \label{matrix__c__testable_8c_ab66ed8e0098c0a86b458672a55a9cca9} 
+int k}
+
