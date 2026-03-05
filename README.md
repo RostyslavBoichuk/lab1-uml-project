@@ -4,10 +4,10 @@ Project for Laboratory Work №1 (OOP).
 
 Contains:
 
-C implementation
-Improved C++ version
-Unit tests
-UML diagrams
+C implementation, 
+Improved C++ version, 
+Unit tests, 
+UML diagrams, 
 Documentation (Doxygen)
 
 Structure:
@@ -27,5 +27,6 @@ Structure:
 Documentation can be generated with:
 
 doxygen Doxyfile
+
 
 
