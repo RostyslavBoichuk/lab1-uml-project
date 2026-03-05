@@ -9,31 +9,22 @@ bin/
 *.obj
 *.log
 
-# =========================
-# CMake (якщо будеш використовувати)
-# =========================
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 
-# =========================
-# Doxygen generated docs
-# =========================
+
 docs/doxygen/html/
 docs/doxygen/latex/
 docs/doxygen/man/
 
-# =========================
-# IDE
-# =========================
+
 .vscode/
 .idea/
 *.suo
 *.user
 *.code-workspace
 
-# =========================
-# System files
-# =========================
+
 .DS_Store
 Thumbs.db
