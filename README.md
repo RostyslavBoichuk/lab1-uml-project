@@ -12,13 +12,20 @@ Documentation (Doxygen)
 
 Structure
 lab1/
+
 │
+
 ├── src/
+
 ├── tests/
+
 ├── docs/
+
 ├── Doxyfile
+
 └── README.md
 
 Documentation can be generated with:
 
 doxygen Doxyfile
+
