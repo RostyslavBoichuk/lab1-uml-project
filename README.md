@@ -10,8 +10,7 @@ Unit tests
 UML diagrams
 Documentation (Doxygen)
 
-Structure
-lab1/
+Structure:
 
 │
 
@@ -28,4 +27,5 @@ lab1/
 Documentation can be generated with:
 
 doxygen Doxyfile
+
 
